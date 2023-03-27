@@ -1,6 +1,6 @@
 export const styles = {
     main: {
-        height: { xs: "auto", md: "120%" },
+        height: { xs: "auto", md: "auto" },
     },
     containerCards: {
         heigth: "60%",

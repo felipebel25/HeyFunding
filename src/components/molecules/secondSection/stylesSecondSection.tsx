@@ -7,7 +7,7 @@ export const styles = {
         textAlign: "center",
         fontSize: {xs:'2.4rem', md:"3.5rem"},
         fontWeight: 500,
-        margin: { xs: "15% 0", md: "10rem" }
+        margin: { xs: "15% 0", md: "7rem" }
     },
     imagesContainer: {
         display: "flex",

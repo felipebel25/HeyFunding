@@ -31,7 +31,7 @@ const pizza = {
 }
 
 const verde = {
-    name: "Verde alma",
+    name: "Verde bendito",
     image: "/images/verde.png",
     moves: [{ name: "Agro" }, { name: "Comercio" }],
     description:'Un grupo universitario ha creado una empresa que cultiva plantas y ha descubierto una especie atractiva y de bajo mantenimiento para el hogar. Buscan fondos para adquirir productos químicos y empezar a venderla."'
