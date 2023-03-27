@@ -1,14 +1,26 @@
 import { AppLayout } from "@atoms";
-import { MainDashboard } from "@/components/molecules/dashboard/main/MainDashboard";
+import { Box } from "@mui/material";
+
+import { Banner } from "@/components/molecules/banner/Banner";
+import { FirstSection } from "@/components/molecules/firstSection/FirstSection";
+import { SecondSection } from "@/components/molecules/secondSection/SecondSection";
+import { ThirdSection } from "@/components/molecules/thirdSection/ThirdSection";
+import { Footer } from "@/components/molecules/footer/Footer";
 
 interface Props {
     data: any;
 }
 
-export const DashboardView = ({ data }: Props) => {
+export const HomeView = ({ data }: Props) => {
     return (
-        <AppLayout title="Dashboard : Monoma" pageDescription="pokemones, monoma, pokemon">
-            <MainDashboard data={data} />
+        <AppLayout title="Home : Hey Funding" pageDescription="hey Funding">
+            <Box sx={{ overflow: "auto", height: "100vh" }}>
+                <Banner />
+                <FirstSection />
+                <SecondSection />
+                <ThirdSection />
+                <Footer />
+            </Box>
         </AppLayout>
     )
 }

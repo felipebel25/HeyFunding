@@ -4,13 +4,12 @@ import { Box, capitalize, Card, CardActionArea, CardContent, CardMedia, Typograp
 import { styles } from "./stylesCardPokemon"
 
 interface Props {
-    pokemon: IPokemon;
-    onOpen: () => void;
+    pokemon: any;
+    onOpen?: () => void;
 }
 
 export const CardPokemon = ({ pokemon, onOpen = () => { } }: Props) => {
     const [isErrorImage, setIsErrorImage] = useState(false)
-    const image = isErrorImage ? '/images/pokeball.png' : `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pokemon.id}.png`
     return (
         <Card key={pokemon.name} sx={styles.card} onClick={() => onOpen()}>
             <CardActionArea sx={styles.cardActionArea}>
@@ -18,20 +17,20 @@ export const CardPokemon = ({ pokemon, onOpen = () => { } }: Props) => {
                     component='img'
                     sx={styles.cardImage}
                     onError={() => setIsErrorImage(true)}
-                    src={image}
+                    src={pokemon.image}
                 />
-                <Box sx={styles.weight}>
-                    {/* <Button    variant="outlined" disabled </Button> */}
+                {/* <Box sx={styles.weight}>
                     <Box sx={styles.weightTag}>
                         <Typography sx={styles.weightText}>{pokemon.weight} lbs</Typography>
                     </Box>
-                </Box>
+                </Box> */}
                 <CardContent sx={styles.cardContainerText}>
                     <Typography sx={styles.name}>{capitalize(pokemon.name)}</Typography>
+                    <Typography style={styles.description}>{pokemon.description}</Typography>
                     {pokemon.moves[0] &&
                         <Box sx={styles.abilities}>
-                            {pokemon.moves?.map((moves) => (
-                                <Typography key={moves?.move?.name} sx={styles.ability}>#{moves?.move?.name ?? ''}</Typography>
+                            {pokemon.moves?.map((moves: any) => (
+                                <Typography key={moves?.name} sx={styles.ability}>#{moves?.name ?? ''}</Typography>
                             ))}
                         </Box>
                     }

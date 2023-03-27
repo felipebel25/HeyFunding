@@ -1,11 +1,11 @@
 {
-  "name": "Monomapokedex",
+  "name": "HeyFunding",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "node dev-server.js",
+    "dev": "next dev",
     "build": "next build",
-    "start": "node prod-server.js",
+    "start": "next start",
     "lint": "next lint",
     "cypress": "cypress open"
   },

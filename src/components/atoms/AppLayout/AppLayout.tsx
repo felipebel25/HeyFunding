@@ -1,6 +1,6 @@
 import { PropsWithChildren } from "react";
 import Head from "next/head"
-import { NavBarDashboard } from "@molecules";
+import { NavbarHome } from "@/components/molecules/navbarHome/NavbarHome";
 
 interface Props extends PropsWithChildren {
     title: string;
@@ -17,10 +17,11 @@ export const AppLayout = ({ children, title, pageDescription, imageFullUrl }: Pr
                 <meta name="og:title" content={title} />
                 <meta name="og:description" content={pageDescription} />
             </Head>
-            <nav>
-                <NavBarDashboard />
-            </nav>
+
             <main style={{ height: "100vh", overflow: "hidden" }}>
+                <nav >
+                    <NavbarHome />
+                </nav>
                 {children}
             </main>
 

@@ -2,18 +2,18 @@ export const styles = {
     card: {
         boxShadow: '0px -1px 10px 0px #0e4b8e70',
         margin: { xs: "2% auto", md: "2%" },
-        width: { xs: "90%", md: "21%" },
-        height: { xs: "50%", md: "30%" },
+        width: { xs: "90%", md: "29%" },
+        height: { xs: "10%", md: "20%" },
         background: "#40456c1f",
         minHeight: "270px",
         cursor: "pointer"
     },
     cardImage: {
-        width: { xs: '80%', md: "100%" },
-        height: { xs: "66%", md: "65%" },
+        width: { xs: '80%', md: "50%" },
+        height: { xs: "70%", md: "25%" },
         margin: '0 auto',
         objectFit: "contain",
-        padding: "2%"
+        padding: "1%"
     },
     name: {
         fontWeight: 700
@@ -22,11 +22,14 @@ export const styles = {
         display: "flex"
     },
     ability: {
+        mt: '2%',
         marginRight: '2%',
+        fontSize: "1rem"
+
     },
     cardContainerText: {
-        backgroundColor: '#fff',
-        height: { xs: "26%", md: "32%" },
+        backgroundColor: 'info.main',
+        height: { xs: "30%", md: "85%" },
         padding: "2% 6%"
     },
     weight: {
@@ -60,5 +63,8 @@ export const styles = {
     cardActionArea: {
         width: "100%",
         height: "100%"
+    },
+    description: {
+        fontSize: "1.2rem"
     }
 }
