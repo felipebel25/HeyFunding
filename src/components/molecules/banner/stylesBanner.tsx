@@ -1,13 +1,14 @@
 export const styles = {
     main: {
-        height: { xs: "auto", md: "60%" },
+        height: { xs: "auto", md: "auto" },
         textAlign: { xs: 'center', md: "left" },
         backgroundColor: "info.main",
-        padding: { xs: "4%" },
+        padding: { xs: "4%", md: "6% 4%" },
         display: "flex",
         flexDirection: { xs: "column", md: "row" },
         alignItems: "center",
-        justifyContent: { sx: "center", md: "space-between" }
+        justifyContent: { sx: "center", md: "space-between" },
+
     },
     textContainer: {
         width: { md: "50%" }

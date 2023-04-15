@@ -4,7 +4,7 @@ export const styles = {
         width: "100%",
         display: "flex",
         justifyContent: "space-between",
-        padding: "4%% 4%",
+        padding: "0% 4%",
     },
     image: {
         display: "flex",
@@ -22,6 +22,9 @@ export const styles = {
     sn: {
         width: "auto",
         height: "40%",
-        cursor: "pointer"
+        cursor: "pointer",
+        '&:hover':{
+            opacity: 0.5
+        }
     }
 }

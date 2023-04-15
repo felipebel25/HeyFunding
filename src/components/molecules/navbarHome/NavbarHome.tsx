@@ -17,7 +17,7 @@ export const NavbarHome = () => {
                 />
             </Box>
             <Button sx={styles.button}>
-                Crear
+                Empezar
             </Button>
         </Box>
     )
