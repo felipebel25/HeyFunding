@@ -7,7 +7,7 @@ export const Banner = () => {
         <Box sx={styles.main}>
             <Box sx={styles.textContainer}>
                 <Typography component='h1' variant="h1" sx={styles.title}>Que es Hey Funding?</Typography>
-                <Typography variant="subtitle1" sx={styles.description}>Hey funding ayuda a emprendedores innovadores a través de donaciones para crear o mejorar sus negocios y adquirir elementos necesarios para producir servicios. Promovemos efectivamente a estos emprendedores y nos comprometemos a garantizar el uso responsable y efectivo de las donaciones. Creemos en la colaboración y la innovación para hacer realidad los sueños empresariales y crear un mundo mejor. </Typography>
+                <Typography variant="subtitle1" sx={styles.description}>Hey funding ayuda a emprendedores innovadores a través de donaciones para crear o mejorar sus negocios y adquirir elementos necesarios para producir servicios. Promovemos efectivamente a estos emprendedores y nos comprometemos a garantizar el uso responsable y efectivo de las donaciones.</Typography>
             </Box>
             <Box sx={styles.imageContainer}>
                 <Image
