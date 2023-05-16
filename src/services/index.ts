@@ -1,2 +1,2 @@
 export { getPokemons, getPokemon } from "./pokemons";
-export { default as pokeApi } from "./pokeApi";
+export { default as hfApi } from "./hfApi";
