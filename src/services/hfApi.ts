@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const hfApi = axios.create({
-    baseURL: 'https://hey-funding.vercel.app/api'
+    baseURL: `${process.env.NEXT_PUBLIC_URL}/api`
 })
 
 export default hfApi
