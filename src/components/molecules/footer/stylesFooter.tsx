@@ -1,19 +1,20 @@
 export const styles = {
     footer: {
-        height: { xs: "20%", md: "10%" },
+        height: { xs: "7rem", md: "10%" },
         width: "100%",
         display: "flex",
         justifyContent: "space-between",
         padding: "0% 4%",
+        borderTop:"1px solid #E56B51"
     },
     image: {
         display: "flex",
-        width: { xs: "20%", md: "5%" },
-        height: { xs: "45%", md: "100%" },
+        width: { xs: "auto", md: "5%" },
+        height: { xs: "100%", md: "100%" },
     },
     logos: {
         width: { xs: "40%", md: "11%" },
-        height: {xs:"48%" , md:"100%"},
+        height: {xs:"100%" , md:"100%"},
         display: "flex",
         alignItems: {xs:"center",md:"center"},
         justifyContent: "space-between",

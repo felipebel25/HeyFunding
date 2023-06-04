@@ -22,7 +22,7 @@ export const styles = {
         margin: { xs: "5% 0", md: "0" }
     },
     imageContainer: {
-        width: { xs: "90%", md: "30%" },
+        width: { xs: "90%", md: "37%" },
         mt: "2%"
     }
 

@@ -12,7 +12,7 @@ export const lightTheme = createTheme({
       main: '#FFFFFF'
     },
     info: {
-      main: '#E56B51'
+      main: '#E56B51',
     },
 
   },
@@ -51,7 +51,10 @@ export const lightTheme = createTheme({
           fontSize: '1.6rem',
           fontWeight: 300,
         },
-
+        body2:{
+          fontSize:"1.6rem",
+          color: "black",
+        },
         root: {
           fontSize: "1.6rem",
           color: "#FFFFFF",
