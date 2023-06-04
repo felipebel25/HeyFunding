@@ -1,7 +1,6 @@
 import { FacebookOutlined } from "@mui/icons-material"
 import { Box } from "@mui/material"
 import Image from "next/image"
-import Link from "next/link"
 import { InstagramIcon } from "public/components/InstagramIcon"
 import { TwitterIcon } from "public/components/TwitterIcon"
 import { styles } from "./stylesFooter"

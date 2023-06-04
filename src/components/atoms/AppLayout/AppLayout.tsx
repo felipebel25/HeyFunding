@@ -1,4 +1,4 @@
-import { PropsWithChildren } from "react";
+import { PropsWithChildren, ReactElement } from "react";
 import Head from "next/head"
 import { NavbarHome } from "@/components/molecules/navbarHome/NavbarHome";
 
@@ -17,8 +17,7 @@ export const AppLayout = ({ children, title, pageDescription, imageFullUrl }: Pr
                 <meta name="og:title" content={title} />
                 <meta name="og:description" content={pageDescription} />
             </Head>
-
-            <main style={{ height: "100vh", overflow: "hidden" }}>
+            <main >
                 <nav >
                     <NavbarHome />
                 </nav>

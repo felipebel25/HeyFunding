@@ -1,8 +1,9 @@
-import { CardPokemon } from "@/components/atoms"
+import { CardCompany } from "@/components/atoms"
 import { Box, Typography } from "@mui/material"
 import { styles } from "./stylesFirstSection"
 
 const julio = {
+    url: "julio",
     name: "Don Julio",
     image: "/images/julio.png",
     moves: [{ name: "Agro" }, { name: "Comercio" }],
@@ -10,6 +11,7 @@ const julio = {
 }
 
 const chowamandala = {
+    url: "chowamandala",
     name: "Chowamandala",
     image: "/images/chowamandala.png",
     moves: [{ name: "Arte" }, { name: "Textil" }],
@@ -17,6 +19,7 @@ const chowamandala = {
 }
 
 const lamn = {
+    url: 'lamn',
     name: "LAMN",
     image: "/images/lamn.png",
     moves: [{ name: "Textil" }, { name: "Comercio" }],
@@ -24,6 +27,7 @@ const lamn = {
 }
 
 const pizza = {
+    url: 'pizzaamericana',
     name: "Pizza Americana",
     image: "/images/pizza.png",
     moves: [{ name: "Comida Rapida" }, { name: "Comercio" }],
@@ -31,23 +35,23 @@ const pizza = {
 }
 
 const verde = {
+    url: 'verdebendito',
     name: "Verde bendito",
     image: "/images/verde.png",
     moves: [{ name: "Agro" }, { name: "Comercio" }],
     description:'Un grupo universitario ha creado una empresa que cultiva plantas y ha descubierto una especie atractiva y de bajo mantenimiento para el hogar. Buscan fondos para adquirir productos químicos y empezar a venderla."'
 }
-export const FirstSection = () => {
+export const FirstSection = ({ title =''}) => {
     return (
         <Box sx={styles.main}>
-            <Typography component='h2' sx={styles.title}>Algunos Emprendimientos</Typography>
+            <Typography component='h2' sx={styles.title}>{title}</Typography>
             <Box sx={styles.containerCards}>
-                <CardPokemon pokemon={lamn} />
-                <CardPokemon pokemon={chowamandala} />
-                <CardPokemon pokemon={julio} />
-                <CardPokemon pokemon={pizza} />
-                <CardPokemon pokemon={verde} />
-                <CardPokemon pokemon={verde} />
-
+                <CardCompany company={lamn} />
+                <CardCompany company={chowamandala} />
+                <CardCompany company={julio} />
+                <CardCompany company={pizza} />
+                <CardCompany company={verde} />
+                <CardCompany company={verde} />
             </Box>
 
 

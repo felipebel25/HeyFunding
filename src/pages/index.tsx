@@ -1,16 +1,11 @@
 import { HomeView } from "@/components/organisms/dashboard/DashboardView";
 
-interface Props {
-  pokemons: any;
-}
 
-const HomePage = ({ pokemons }: Props) => {
+const HomePage = () => {
 
 
   return (
-    <>
-      <HomeView data={pokemons} />
-    </>
+      <HomeView  />
   )
 }
 export default HomePage
