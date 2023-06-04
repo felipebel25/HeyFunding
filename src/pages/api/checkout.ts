@@ -6,8 +6,6 @@ mercadopago.configure({
     access_token: process.env.NEXT_ACCESS_TOKEN!,
 });
 
-
-
 type Data =
     | { name: string }
     | { error: string }
